@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario Registro | Psicoalianza | Evaluación efectiva del talento humano</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Bootstrap -->
+
+    <link href="pruebas-2020-bw/css/bootstrap.min.css" rel="stylesheet">
+    <link href="pruebas-2020-bw/css/estilos-black-week.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="pruebas-2020-bw/images/favicon-psicolianza-landing-96x96.png">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b5db23b1cd.js"></script>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5NZPWR2');</script>
+    <!-- End Google Tag Manager -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NZPWR2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --> 
+
+    <!--MODAL xs-->
+    <div class="modal fade bs-example-modal in" role="dialog" tabindex="-1" aria-labelledby="myLargeModalLabel">
+
+      <div class="modal-dialog modal-lg center-block" role="document">
+        <div class="modal-content">
+
+          <div class="modal-body center-block">
+            <button type="button" class="close terminos_condiciones" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="far fa-times-circle"></i></span></button>
+
+            <iframe class="iframe-modal-condiciones" src="terminos_condiciones.html"></iframe>
+
+            <button type="button" id="aceptar_terminos_popUp" class="btn btn-warning btn-lg modal_terminos center-block"><i class="far fa-check-circle icono_aceptar"></i> Continuar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion_01_formulario_bw">
+        <div class="container">
+  
+          <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 center-block sin-padding">
+  
+            <div class="seccion_formulario_bw">
+              <!--<h3 class="tx_lato_regular_30_centrado_formulario_externo">Comencemos, hablemos<br>un poco de su compañía</h3>-->
+              <img src="pruebas-2020-bw/images/logo-psicolianza-landing-white-web.png" alt="" class="img-responsive center-block">
+              <h3 class="tx-form-web-02">BLACK WEEK</h3>
+              <h3 class="tx-form-web-03">del 29 de noviembre al 6 de diciembre</h3>
+              <img src="pruebas-2020-bw/images/50-descuento-bw-web-02.png" alt="50% de descuento Black Week" class="img-responsive center-block img-50-descuento-web-form">
+              
+              <h3 class="tx-form-web-04">Confírmenos sus datos y aproveche nuestra oferta.</h3>
+              
+              <form role="form" id="contactForm" data-toggle="validator" class="center-block">
+  
+                <div class="form-group">
+                  <label class="label-form-bw" for="first_name">Nombre y apellidos</label>
+                  <input type="text" class="form-control-bw" id="first_name" placeholder="" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+  
+                <div class="form-group">
+                  <label class="label-form-bw" for="empresa">Empresa</label>
+                  <input type="text" class="form-control-bw" id="empresa" placeholder="" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="margen-casilla-telefono">
+                    <label class="label-form-bw"  for="telephone">Teléfono o célular</label>
+                    <input type="text" maxlength="10" class="form-control-bw ancho-casilla-telefono" id="telephone" placeholder="" required pattern="[0-9-]*" inputmode="numeric"><span><img src="pruebas-2020-bw/images/llamar_colombia_02.png" alt="Icono llamar Colombia" class="position-icono-telefono"></span>
+                    </div>
+                    <div class="help-block with-errors"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="label-form-bw" for="email">Email</label>
+                  <input type="email" class="form-control-bw" id="email" placeholder="" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="checkbox-bw">
+                  <input type="checkbox" id="checkbox" required> Acepto y autorizo la política de tratamiento de datos, acepto términos y condiciones. Puede consultarlos <span><a href="" type="button" data-toggle="modal" data-target=".bs-example-modal" class="tx_terminos_bw" title="Ver términos y condiciones">aquí.</a></span>
+                </div>
+                <div id="msgSubmit_condiciones" class="h4 text-center hidden"></div>
+
+                <!--#slider-formulario-registro-->
+                <button type="submit" id="form-submit" class="btn btn-warning btn-lg bw center-block">Registrarse</button>
+  
+                <div id="msgSubmit" class="h4 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </form>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="pruebas-2020-bw/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="pruebas-2020-bw/js/validator.min.js"></script>
+    <script type="text/javascript" src="pruebas-2020-bw/js/scripts_form_black_week_02.js"></script>
+
+  </body>
+</html>
